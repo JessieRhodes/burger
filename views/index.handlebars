@@ -1,15 +1,15 @@
 <h2>What kind of Burger sounds good?</h2>
 <form class="create-update-form" action="burgers/create" method="POST">
 
-  <div class="form-group">
+  <div id="burger" class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button id="burger" type="submit">Add Burger</button>
 </form>
 
-<h2>Burgers!</h2>
+<h2>Your Burgers: enjoy, totally guilt free</h2>
 
 <ul>
   {{#each burgers}}
@@ -19,7 +19,7 @@
 
         <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">DINNER TIME!</button>
+          <button id="burger" type="submit">DINNER TIME!</button>
         </form>
 
         {{> burgers/devoured-burgers}}

@@ -2,6 +2,11 @@ li {
   background: #F4991A;
   margin: 10px;
   padding: 10px;
+  font-family: 'Anton', sans-serif;
+}
+
+h1, h2, #burger {
+  font-family: 'Anton', sans-serif;
 }
 
 .label {
