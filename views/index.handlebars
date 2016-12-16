@@ -1,6 +1,15 @@
-<h1>Burgers!</h1>
+<h2>What kind of Burger sounds good?</h2>
+<form class="create-update-form" action="burgers/create" method="POST">
 
-<h2>Devoured Burgers!</h2>
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
+
+<h2>Burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -13,13 +22,13 @@
           <button type="submit">DINNER TIME!</button>
         </form>
 
-        {{> burgers/delete-burger}}
+        {{> burgers/devoured-burgers}}
       </li>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Devoured Burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -27,30 +36,10 @@
       <li>
         {{this.name}}
 
-        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="false">
-          <button type="submit">WAKE UP!</button>
-        </form>
-
-        {{> burgers/delete-burger}}
+        {{> burgers/devoured-burgers}}
       </li>
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-update-form" action="burgers/create" method="POST">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Sleepy?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Sleepy!<br>
-    <input type="radio" name="devoured" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>

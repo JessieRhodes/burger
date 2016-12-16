@@ -1,7 +1,7 @@
 li {
-  background: #FAEBD7;
-  margin: 5px;
-  padding: 5px;
+  background: #F4991A;
+  margin: 10px;
+  padding: 10px;
 }
 
 .label {
@@ -9,11 +9,11 @@ li {
 }
 
 .create-update-form {
-  background: aqua;
-  margin: 5px;
-  padding: 5px;
+  background: #70A3C4;
+  margin: 10px;
+  padding: 10px;
 }
 
 .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
