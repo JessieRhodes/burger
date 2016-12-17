@@ -17,6 +17,10 @@ h1, h2, #burger {
   background: #70A3C4;
   margin: 10px;
   padding: 10px;
+  
+}
+#updateForm {
+	opacity: 0.6;
 }
 
 .form-group {
